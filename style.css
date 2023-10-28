@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: calc(100vh - 1px);
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50rem bottom 16rem, left 46rem top 24rem;
+  overflow: hidden;
+}
+.card {
+  position: absolute;
+  background-color: white;
+  width: 23.5rem;
+  z-index: 999;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.bg_img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: relative;
+  width: 100%;
+}
+.pf_img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  border: solid 5px white;
+  margin-left: -240px;
+  margin-top: 97px;
+  justify-content: center;
+}
+main {
+  padding: 20px;
+}
+main .hed {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+  margin-top: 1.3rem;
+  gap: 10px;
+}
+main .name {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+}
+main .age {
+  color: hsl(227, 10%, 46%);
+  font-size: 18px;
+}
+
+main .place {
+  text-align: center;
+  margin-top: 0.8rem;
+  color: hsl(227, 10%, 46%);
+  font-size: 15px;
+}
+section {
+  display: flex;
+  padding-bottom: 25px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+section .num {
+  color: hsl(229, 23%, 23%);
+}
+section .name2 {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 59%);
+  margin-top: 2px;
+}
+.attribution{
+    margin-top: 40rem;
+}
+hr {
+  border: none;
+  background-color: hsl(0, 0%, 72%);
+  height: 1px;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 11rem bottom 16rem, left 7rem top 22rem;
+    overflow: hidden;
+  }
+  .card {
+    width: 90%;
+  }
+  .pf_img {
+    margin-left: -224px;
+    margin-top: 83px;
+  }
+}
